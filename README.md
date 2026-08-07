@@ -227,22 +227,15 @@ Displays:
 - Training metadata
 
 ---
+## 📷 Screenshots
 
-# 📷 Screenshots
+### Home Page
 
-## Home Page
-
-> Save this screenshot as:
-
-```
-images/home.png
-```
-
-```markdown
 ![Home Page](images/home.png)
-```
 
----
+### Prediction Result
+
+![Prediction Result](images/prediction.png)
 
 ## Prediction Result
 
