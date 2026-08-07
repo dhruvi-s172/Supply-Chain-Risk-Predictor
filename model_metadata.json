@@ -1,0 +1,177 @@
+{
+  "target_column": "risk_classification",
+  "feature_columns": [
+    "timestamp",
+    "vehicle_gps_latitude",
+    "vehicle_gps_longitude",
+    "fuel_consumption_rate",
+    "eta_variation_hours",
+    "traffic_congestion_level",
+    "warehouse_inventory_level",
+    "loading_unloading_time",
+    "handling_equipment_availability",
+    "order_fulfillment_status",
+    "weather_condition_severity",
+    "port_congestion_level",
+    "shipping_costs",
+    "supplier_reliability_score",
+    "lead_time_days",
+    "historical_demand",
+    "iot_temperature",
+    "cargo_condition_status",
+    "route_risk_level",
+    "customs_clearance_time",
+    "driver_behavior_score",
+    "fatigue_monitoring_score",
+    "delivery_time_deviation"
+  ],
+  "excluded_features": [
+    "disruption_likelihood_score",
+    "delay_probability"
+  ],
+  "timestamp_feature": "timestamp",
+  "timestamp_preprocessing": "Convert ISO datetime input to Unix timestamp in seconds.",
+  "target_encoding": {
+    "encoder": "LabelEncoder",
+    "classes": [
+      "High Risk",
+      "Low Risk",
+      "Moderate Risk"
+    ]
+  },
+  "scaling": {
+    "used": false,
+    "reason": "No StandardScaler appears in the notebook workflow."
+  },
+  "model": {
+    "name": "Random Forest Classifier",
+    "parameters": {
+      "n_estimators": 100,
+      "random_state": 42
+    },
+    "test_accuracy": 0.7468,
+    "training_rows": 25652,
+    "test_rows": 6413
+  },
+  "dataset": {
+    "rows": 32065,
+    "columns": 26,
+    "class_distribution": {
+      "High Risk": 23944,
+      "Moderate Risk": 5011,
+      "Low Risk": 3110
+    }
+  },
+  "numeric_stats": {
+    "vehicle_gps_latitude": {
+      "min": 30.00000000000937,
+      "max": 49.99999974528573,
+      "median": 36.41382018655116
+    },
+    "vehicle_gps_longitude": {
+      "min": -119.99999842346357,
+      "max": -70.00000000027708,
+      "median": -86.29341367981668
+    },
+    "fuel_consumption_rate": {
+      "min": 5.0,
+      "max": 19.99987521068584,
+      "median": 5.636035817632568
+    },
+    "eta_variation_hours": {
+      "min": -1.999993096796247,
+      "max": 4.999999999999999,
+      "median": 3.882059226946552
+    },
+    "traffic_congestion_level": {
+      "min": 1.0916326575415083e-09,
+      "max": 9.999999450021503,
+      "median": 4.981244166033586
+    },
+    "warehouse_inventory_level": {
+      "min": 1.3222098085915766e-12,
+      "max": 999.9992984582192,
+      "median": 157.28802154512064
+    },
+    "loading_unloading_time": {
+      "min": 0.5000000002939576,
+      "max": 4.999999764318551,
+      "median": 1.9171212962803543
+    },
+    "handling_equipment_availability": {
+      "min": 4.565768935154056e-16,
+      "max": 0.9999994924514408,
+      "median": 0.1595150876366321
+    },
+    "order_fulfillment_status": {
+      "min": 1.3177636062343215e-06,
+      "max": 0.999999999580062,
+      "median": 0.6805529540380978
+    },
+    "weather_condition_severity": {
+      "min": 4.536948802796939e-09,
+      "max": 0.9999999970281211,
+      "median": 0.4961781478769314
+    },
+    "port_congestion_level": {
+      "min": 1.7786653117737469e-06,
+      "max": 10.0,
+      "median": 8.383225336980033
+    },
+    "shipping_costs": {
+      "min": 100.00000000270798,
+      "max": 999.9998534356176,
+      "median": 388.99691118908765
+    },
+    "supplier_reliability_score": {
+      "min": 6.90431900667656e-10,
+      "max": 0.9999999894791904,
+      "median": 0.503265508252994
+    },
+    "lead_time_days": {
+      "min": 1.0,
+      "max": 14.999995477940352,
+      "median": 3.2976536222606923
+    },
+    "historical_demand": {
+      "min": 100.0029656047095,
+      "max": 9999.9999997523,
+      "median": 6785.123208753539
+    },
+    "iot_temperature": {
+      "min": -10.0,
+      "max": 39.99988649386724,
+      "median": -7.858681308881727
+    },
+    "cargo_condition_status": {
+      "min": 7.255414878683799e-19,
+      "max": 0.9999999827710112,
+      "median": 0.1549759726564307
+    },
+    "route_risk_level": {
+      "min": 4.9681852615333446e-05,
+      "max": 9.999999999999986,
+      "median": 8.385604983635632
+    },
+    "customs_clearance_time": {
+      "min": 0.5000000010386003,
+      "max": 4.999999927566654,
+      "median": 1.9382733484967636
+    },
+    "driver_behavior_score": {
+      "min": 4.0439268764785506e-09,
+      "max": 0.9999999999998206,
+      "median": 0.4988468217889371
+    },
+    "fatigue_monitoring_score": {
+      "min": 3.269508178898524e-07,
+      "max": 0.9999999999968756,
+      "median": 0.6831130237993429
+    },
+    "delivery_time_deviation": {
+      "min": -1.9999979891152304,
+      "max": 9.99999999998948,
+      "median": 6.1136617982342045
+    }
+  }
+}

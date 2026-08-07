@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.deps/
+.pip-tmp/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Tooling and OS files
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store
+Thumbs.db
