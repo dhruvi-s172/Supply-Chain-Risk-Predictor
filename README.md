@@ -233,15 +233,15 @@ Displays:
 
 ### Home Page
 
-![Home Page](images/home.png)
+![Home Page](Image/home.png)
 
 ---
 
 ### Prediction Result
 
-![Prediction Result](images/prediction.png)
+![Prediction Result](Image/prediction.png)
 
----
+------
 # 📊 Prediction Output
 
 The application predicts one of three classes:
