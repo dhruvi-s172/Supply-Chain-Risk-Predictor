@@ -60,26 +60,6 @@ https://www.kaggle.com/datasets/datasetengineer/logistics-and-supply-chain-datas
 - **Records:** 32,065
 - **Original Features:** 26
 - **Target Column:** `risk_classification`
-
-The dataset includes operational logistics information such as:
-
-- Vehicle GPS Location
-- ETA Variation
-- Traffic Congestion
-- Fuel Consumption
-- Warehouse Inventory
-- Weather Severity
-- Supplier Reliability
-- Lead Time
-- Shipping Costs
-- Historical Demand
-- Route Risk
-- Driver Behavior
-- Customs Clearance Time
-- Cargo Condition
-- Delivery Time Deviation
-- and several additional logistics features.
-
 ---
 
 # 🧹 Data Preprocessing
@@ -150,85 +130,6 @@ Supply-Chain-Risk-Predictor/
 
 ---
 
-# ⚙ Installation
-
-Clone the repository
-
-```bash
-git clone https://github.com/dhruvi-s172/Supply-Chain-Risk-Predictor.git
-
-cd Supply-Chain-Risk-Predictor
-```
-
-Create virtual environment
-
-```bash
-python -m venv .venv
-```
-
-Activate environment
-
-### Windows
-
-```bash
-.\.venv\Scripts\Activate.ps1
-```
-
-### macOS/Linux
-
-```bash
-source .venv/bin/activate
-```
-
-Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-# ▶ Running the Project
-
-Launch the Streamlit application
-
-```bash
-streamlit run app.py
-```
-
-If the model artifacts are missing, regenerate them:
-
-```bash
-python train_model.py
-```
-
----
-
-# 🖥 Application Pages
-
-### Risk Prediction
-
-- Enter shipment details
-- Predict shipment risk
-- View confidence scores
-- Probability distribution
-
-### Dataset Overview
-
-Displays dataset statistics and feature information.
-
-### Model Information
-
-Displays:
-
-- Model type
-- Features used
-- Target classes
-- Training metadata
-
----
----
-
 ## 📷 Screenshots
 
 ### Home Page
@@ -266,18 +167,27 @@ Along with prediction probabilities visualized using Plotly.
 - Jupyter Notebook
 
 ---
+# 🖥 Application Pages
 
-# 🚀 Future Improvements
+### Risk Prediction
 
-- Hyperparameter tuning
-- Cross-validation reporting
-- SHAP feature importance
-- Model monitoring
-- Batch prediction using CSV upload
-- REST API deployment
-- Docker support
-- CI/CD pipeline
-- Automated unit testing
+- Enter shipment details
+- Predict shipment risk
+- View confidence scores
+- Probability distribution
+
+### Dataset Overview
+
+Displays dataset statistics and feature information.
+
+### Model Information
+
+Displays:
+
+- Model type
+- Features used
+- Target classes
+- Training metadata
 
 ---
 
@@ -288,15 +198,6 @@ Along with prediction probabilities visualized using Plotly.
 GitHub:
 
 https://github.com/dhruvi-s172
-
----
-
-# 🙏 Acknowledgements
-
-- Kaggle Logistics & Supply Chain Dataset
-- Scikit-learn
-- Streamlit
-- Plotly
 
 ---
 
