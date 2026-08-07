@@ -227,30 +227,21 @@ Displays:
 - Training metadata
 
 ---
+---
+
 ## 📷 Screenshots
 
 ### Home Page
 
 ![Home Page](images/home.png)
 
+---
+
 ### Prediction Result
 
 ![Prediction Result](images/prediction.png)
 
-## Prediction Result
-
-Save this screenshot as:
-
-```
-images/prediction.png
-```
-
-```markdown
-![Prediction](images/prediction.png)
-```
-
 ---
-
 # 📊 Prediction Output
 
 The application predicts one of three classes:
